@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "givaproject-e288b": {
+      "hosting": {
+        "givaProject": [
+          "givaproject-e288b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "givaproject-e288b"
+  }
+}
