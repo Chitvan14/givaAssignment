@@ -17,7 +17,9 @@ export class UserComponent implements OnInit {
     });
   }
 
-  updateDisableUser(user: any) {
-    user.disabled = !user.disabled;
+  updateDisableUser(user: Users) {
+    let updateUser = {...user};
+    updateUser.disabled = !updateUser.disabled;
+    this.userService.updateUser(updateUser);
   }
 }

@@ -1,16 +1,19 @@
 <div>
   <ul *ngFor="let user of users" class="collection">
     <li class="collection-item avatar">
-      <i class="material-icons circle">giva.co</i>
+      <i class="material-icons circle">{{ user.id }}</i>
       <span class="title">{{ user.name }}</span> <br />
       <span>Mail : {{ user.mail }}</span>
       <br /><span>Role : {{ user.roles }}</span> <br />Disabled?
       {{ user.disabled }} <br />
       <br />
 
-      <a class="waves-effect waves-light btn" (click)="updateDisableUser(user)"
-        >Update Disable</a
+      <button
+        class="waves-effect waves-light btn"
+        (click)="updateDisableUser(user)"
       >
+        Update Disable Status
+      </button>
     </li>
   </ul>
 </div>
